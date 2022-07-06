@@ -1,0 +1,1 @@
+web gunicorn VIDYA.wsgi.apllication --log-file - 

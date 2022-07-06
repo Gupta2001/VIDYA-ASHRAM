@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+
+{% block bloghome %}active{% endblock bloghome %}
+
+{% block css %}
+        <style>
+            .container{
+                min-height: 85vh;
+            }
+        </style>  
+{% endblock css %}
+
+{% block body %}
+ <div class="container">
+
+    <h1 class="my-3 text-center">{{blog.title}}</h1>
+
+    {{blog.content | safe}}
+ </div>
+
+
+{% endblock body %}
